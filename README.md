@@ -31,6 +31,8 @@ web components built with React
 
 Package | Version | Dev
 --- |:---:|:---:
+[classnames](https://www.npmjs.com/package/classnames) | ^2.2.2 | ✖
+[react-prop-types](https://www.npmjs.com/package/react-prop-types) | ^0.3.0 | ✖
 [node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
 
 

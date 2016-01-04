@@ -23,5 +23,9 @@
   "homepage": "https://github.com/nasawz/react-nicesn",
   "devDependencies": {
     "node-readme": "^0.1.9"
+  },
+  "dependencies": {
+    "classnames": "^2.2.2",
+    "react-prop-types": "^0.3.0"
   }
 }

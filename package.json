@@ -1,0 +1,27 @@
+{
+  "name": "react-nicesn",
+  "version": "0.0.1",
+  "description": "web components built with React",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasawz/react-nicesn.git"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "react-component"
+  ],
+  "author": "nasa.wang <nasa127@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nasawz/react-nicesn/issues"
+  },
+  "homepage": "https://github.com/nasawz/react-nicesn",
+  "devDependencies": {
+    "node-readme": "^0.1.9"
+  }
+}

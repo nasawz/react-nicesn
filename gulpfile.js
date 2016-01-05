@@ -48,7 +48,12 @@ gulp.task('webpack', function() {
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel'
-        }]
+        },
+        {
+          test: /\.less$/,
+          loader: 'style-loader!css-loader!less-loader'
+        }
+      ]
       },
       plugins: [
         new webpack.webpack.optimize.CommonsChunkPlugin("common.js")

@@ -6,29 +6,15 @@ import Button from "../src/Button.js";
 
 ReactDOM.render(
   <div>
-    {/* Standard button */}
-    <Button>Default</Button>
-
-    {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-    <Button bsStyle="primary">Primary</Button>
-
-    {/* Indicates a successful or positive action */}
-    <Button bsStyle="success">Success</Button>
-
-    {/* Contextual button for informational alert messages */}
-    <Button bsStyle="info">Info</Button>
-
-    {/* Indicates caution should be taken with this action */}
-    <Button bsStyle="warning">Warning</Button>
-
-    {/* Indicates a dangerous or potentially negative action */}
-    <Button bsStyle="danger">Danger</Button>
-
-    {/* Deemphasize a button by making it look like a link while maintaining button behavior */}
-    <Button bsStyle="link">Link</Button>
-    <Button bsStyle="filled">filled</Button>
-    <Button bsStyle="rounded">rounded</Button>
-    <Button bsStyle="icon">icon</Button>
+    <Button href="javascript:;">Default</Button>
+    <Button href="javascript:;" block>block</Button>
+    <Button href="javascript:;" active>active</Button>
+    <Button href="javascript:;" disabled>disabled</Button>
+    <Button bsStyle="filled" href="javascript:;">filled</Button>
+    <Button bsStyle="rounded" href="javascript:;">rounded</Button>
+    <Button bsStyle="icon" href="javascript:;">
+      <i className="ti-arrow-up"></i>
+    </Button>
   </div>,
   document.getElementById('__react-content')
 );

@@ -1,3 +1,5 @@
+import './style/buttons.less'
+
 import React from 'react';
 import classNames from 'classnames';
 import elementType from 'react-prop-types/lib/elementType';
@@ -105,7 +107,7 @@ const Button = React.createClass({
 
 Button.types = types;
 
-export default bsStyles(ButtonStyles, DEFAULT,
+export default bsStyles(ButtonStyles, '',
   bsSizes([Sizes.LARGE, Sizes.SMALL, Sizes.XSMALL],
     bsClass('btn', Button)
   )

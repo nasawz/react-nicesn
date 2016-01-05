@@ -8,6 +8,6 @@ injectTapEventPlugin();
 
 
 ReactDOM.render(
-  <Row />,
+  <Row>row</Row>,
   document.getElementById('__react-content')
 );

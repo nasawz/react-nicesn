@@ -12,7 +12,7 @@ gulp.task('default', function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch(['./src/**'], ['webpack'], function(event) {
+  gulp.watch(['./src/**','./examples/**'], ['webpack'], function(event) {
     console.log('Event type: ' + event.type);
     console.log('Event path: ' + event.path);
   });

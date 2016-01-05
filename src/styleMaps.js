@@ -41,5 +41,8 @@ export const DEFAULT = 'default';
 export const PRIMARY = 'primary';
 export const LINK = 'link';
 export const INVERSE = 'inverse';
+export const FILLED = 'filled';
+export const ROUNDED = 'rounded';
+export const ICON = 'icon';
 
 export default styleMaps;

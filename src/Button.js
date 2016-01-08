@@ -1,14 +1,15 @@
 import './style/buttons.less'
 
-import React from 'react';
 import classNames from 'classnames';
 import elementType from 'react-prop-types/lib/elementType';
+import React from 'react';
+
+import bootstrapUtils, { bsStyles, bsSizes, bsClass } from './utils/bootstrapUtils';
+import { Sizes, State, DEFAULT, PRIMARY, LINK, FILLED, ROUNDED, ICON } from './styleMaps';
 
 const types = ['button', 'reset', 'submit'];
 
 
-import bootstrapUtils, { bsStyles, bsSizes, bsClass } from './utils/bootstrapUtils';
-import { Sizes, State, DEFAULT, PRIMARY, LINK, FILLED, ROUNDED, ICON } from './styleMaps';
 
 const ButtonStyles = State.values().concat(DEFAULT, PRIMARY, LINK, FILLED, ROUNDED, ICON);
 
@@ -65,10 +66,9 @@ const Button = React.createClass({
 
   renderAnchor(classes) {
     let Component = this.props.componentClass || 'a';
-    let href = this.props.href || 'javascript:;';
+    let href = this.props.href || '#';
     classes.disabled = this.props.disabled;
-
-    return (
+    let result = (
       <Component
         {...this.props}
         href={href}
@@ -77,6 +77,17 @@ const Button = React.createClass({
         {this.props.children}
       </Component>
     );
+    if(!this.props.href){
+      result = (
+        <Component
+          {...this.props}
+          className={classNames(this.props.className, classes)}
+          role="button">
+          {this.props.children}
+        </Component>);
+    }
+
+    return result
   },
 
   renderButton(classes) {

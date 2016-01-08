@@ -1,8 +1,8 @@
 @import "./core/index.less";
 
-.btn{ font-family: @heading-font, "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif; border: 2px solid @color-primary; padding: 0 26px; height: 40px; min-width: 150px; line-height: 36px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 0; color: @color-primary; text-align: center; .transition(0.3s); margin-right: 8px; margin-bottom: 24px; }
+.btn,.btn-default{ font-family: @heading-font, "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif; border: 2px solid @color-primary; padding: 0 26px; height: 40px; min-width: 150px; line-height: 36px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 0; color: @color-primary; text-align: center; .transition(0.3s); margin-right: 8px; margin-bottom: 24px; border-color:@color-primary;}
 .btn:last-child, .btn:last-of-type{ margin-right: 0; }
-.btn:hover{ background: @color-primary; color: #fff; }
+.btn:hover{ background: @color-primary; color: #fff; border-color:@color-primary;}
 .btn-icon{ width: 40px; height: 40px; font-size: 20px; min-width: 0; padding: 0; line-height: 38px; }
 .btn-lg{ height: 50px; line-height: 46px; min-width: 200px; }
 .btn-icon.btn-lg{ width: 50px; height: 50px; line-height: 49px; font-size: 24px; min-width: 0; }
@@ -18,7 +18,7 @@ body.btn-rounded .btn{ border-radius: 25px !important; }
 .bg-light .btn{ border-color: #222; color: #222; }
 .bg-light .btn:visited, .bg-light .btn:visited:hover{ color: #222; }
 .bg-light .btn-filled, .bg-light .btn-filled:visited{ color: #fff; }
-.btn:visited{ color: @color-primary; }
+.btn:visited{ color: @color-primary; border-color:@color-primary;}
 .btn-white:visited,.btn:visited:hover{ color: #fff; }
 .btn-white:visited:hover{ color: #222; }
 .btn-filled:visited{ color: #fff; }
@@ -26,3 +26,10 @@ body.btn-rounded .btn{ border-radius: 25px !important; }
 .btn.bg-dark:hover{ background: lighten(@bg-dark,10%); }
 .bg-primary .btn{ color: #fff; border-color: #fff; }
 .bg-primary .btn:hover{ background: #fff; color: @color-primary; }
+
+.btn-default:active,.btn-default.active{border-color:@color-primary;color:@color-primary;}
+.btn-default:visited{ color: @color-primary; border-color: @color-primary; background: #fff; }
+.btn-default.active:visited{ color: @color-primary; border-color: @color-primary; background: #fff; }
+.btn-default:visited:hover{ color: #fff; border-color: @color-primary;background: @color-primary; }
+.btn-default.disabled{border-color:@color-primary;color:@color-primary;}
+// .btn-filled:visited{ background: #000; color: #fff; }

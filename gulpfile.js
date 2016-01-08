@@ -12,7 +12,7 @@ gulp.task('default', function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch(['./src/**','./examples/**'], ['webpack'], function(event) {
+  gulp.watch(['./src/**', './examples/**'], ['webpack'], function(event) {
     console.log('Event type: ' + event.type);
     console.log('Event path: ' + event.path);
   });
@@ -49,11 +49,11 @@ gulp.task('webpack', function() {
           exclude: /node_modules/,
           loader: 'babel'
         },
-        {
-          test: /\.less$/,
-          loader: 'style-loader!css-loader!less-loader'
-        }
-      ]
+          {
+            test: /\.less$/,
+            loader: 'style-loader!css-loader!less-loader'
+          }
+        ]
       },
       plugins: [
         new webpack.webpack.optimize.CommonsChunkPlugin("common.js")

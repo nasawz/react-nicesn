@@ -2,7 +2,7 @@ import classNames from "classnames"
 import elementType from 'react-prop-types/lib/elementType'
 import React, { PropTypes } from 'react'
 
-const ModuleGroup = React.createClass({
+const NavBar = React.createClass({
   propTypes: {
     /**
      * You can use a custom element for this component
@@ -16,17 +16,12 @@ const ModuleGroup = React.createClass({
   },
   render() {
     let ComponentClass = this.props.componentClass;
-    let classes = {};
-
-    classes['module-group'] = true;
-    classes[this.props.direction] = this.props.direction;
-
     return (
-      <ComponentClass {...this.props} className={classNames(this.props.className, classes)}>
+      <ComponentClass {...this.props} className={classNames(this.props.className, 'nav-bar')}>
           {this.props.children}
       </ComponentClass>
       )
   }
 })
 
-export default ModuleGroup
+export default NavBar

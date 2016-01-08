@@ -2,7 +2,7 @@ import classNames from "classnames"
 import elementType from 'react-prop-types/lib/elementType'
 import React, { PropTypes } from 'react'
 
-const ModuleGroup = React.createClass({
+const Menu = React.createClass({
   propTypes: {
     /**
      * You can use a custom element for this component
@@ -11,22 +11,17 @@ const ModuleGroup = React.createClass({
   },
   getDefaultProps: function() {
     return {
-      componentClass: 'div'
+      componentClass: 'ul'
     };
   },
   render() {
     let ComponentClass = this.props.componentClass;
-    let classes = {};
-
-    classes['module-group'] = true;
-    classes[this.props.direction] = this.props.direction;
-
     return (
-      <ComponentClass {...this.props} className={classNames(this.props.className, classes)}>
-          {this.props.children}
+      <ComponentClass {...this.props} className={classNames(this.props.className, 'menu')}>
+        { /*{this.props.children}*/ }
       </ComponentClass>
       )
   }
 })
 
-export default ModuleGroup
+export default Menu

@@ -1,3 +1,4 @@
+import "babel-polyfill";
 
 let constant = obj => {
   return Object.assign(
@@ -37,7 +38,7 @@ export const State = constant({
   INFO: 'info'
 });
 
-export const DEFAULT = 'default';
+export const DEFAULT = '';
 export const PRIMARY = 'primary';
 export const LINK = 'link';
 export const INVERSE = 'inverse';

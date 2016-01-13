@@ -2,6 +2,8 @@ import classNames from "classnames"
 import elementType from 'react-prop-types/lib/elementType'
 import React, { PropTypes } from 'react'
 
+import styleMaps from './styleMaps';
+
 const Nav = React.createClass({
   propTypes: {
     /**
@@ -16,8 +18,22 @@ const Nav = React.createClass({
   },
   render() {
     let ComponentClass = this.props.componentClass;
+
+    /**
+     * 生成class样式
+     */
+    let classes = {};
+    if (this.props.mode == styleMaps.NAV.dark) {
+      classes['bg-dark'] = true;
+    }
+    if (this.props.mode == styleMaps.NAV.transparent) {
+      classes['transparent'] = true;
+      classes['absolute'] = true;
+    }
+
+
     return (
-      <ComponentClass {...this.props} className={classNames(this.props.className, '')}>
+      <ComponentClass {...this.props} className={classNames(this.props.className, classes)}>
           {this.props.children}
       </ComponentClass>
       )

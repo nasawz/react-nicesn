@@ -21,6 +21,11 @@ const styleMaps = {
     'sm': 'sm',
     'xs': 'xs'
   },
+  NAV: {
+    'transparent': 'transparent',
+    'light': 'light',
+    'dark': 'dark'
+  },
   GRID_COLUMNS: 12
 };
 

@@ -61,7 +61,6 @@ const Module = React.createClass({
     classes['module'] = true;
     classes[this.props.direction] = this.props.direction;
     classes['widget-handle'] = this.props.widget;
-
     return (
       <ComponentClass {...this.props} className={classNames(this.props.className, classes)}>
           {this.props.children}

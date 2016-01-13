@@ -39,6 +39,11 @@ gulp.task('webpack', function() {
     .pipe(named())
     .pipe(webpack({
       devtool: "#source-map",
+      resolveLoader: {
+        alias: {
+          'copy': 'file-loader?name=res/[name].[ext]'
+        }
+      },
       module: {
         loaders: [{
           test: /\.jsx$/,

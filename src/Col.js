@@ -179,11 +179,12 @@ const Col = React.createClass({
   render() {
 
     let ComponentClass = this.props.componentClass;
-    let classes = {};
+
 
     /**
      * 生成class样式
      */
+    let classes = {};
     Object.keys(styleMaps.SIZES).forEach(key => {
       let size = styleMaps.SIZES[key];
       let prop = size;

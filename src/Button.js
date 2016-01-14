@@ -92,7 +92,7 @@ const Button = React.createClass({
   },
 
   renderButton(classes) {
-    let Component = this.props.componentClass || 'button';
+    let Component = this.props.componentClass || 'a';
 
     return (
       <Component

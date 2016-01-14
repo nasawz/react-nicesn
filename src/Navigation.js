@@ -4,6 +4,7 @@ import './style/themify-icons.css'
 import React, { PropTypes } from 'react'
 
 import Logo from "./Logo.js";
+import Menu from "./Menu.js";
 import Module from "./Module.js";
 import ModuleGroup from "./ModuleGroup.js";
 import Nav from "./Nav.js";
@@ -36,6 +37,7 @@ const Navigation = React.createClass({
             </Module>
             <ModuleGroup direction="right">
               <Module direction="left">
+                <Menu menus={this.props.menus}/>
               </Module>
               { this.renderSearch() }
               { this.renderLangs() }

@@ -12,7 +12,73 @@ let logoObj = {
   light_path: logo_light_path
 }
 
-let menus = []
+let menus = [
+  {
+    title: 'Home',
+    label: '',
+    icon: '',
+    route: '/',
+    subs: {
+      type: 'mega',
+      datas: [
+        [{
+          title: 'Concepts'
+        },
+          {
+            title: 'Adventure',
+            route: '/',
+            icon: '',
+            label: ''
+          }], [
+          {
+            title: 'Concepts'
+          },
+          {
+            title: 'Adventure',
+            route: '/',
+            icon: '',
+            label: 'New!'
+          }
+        ]
+      ]
+    }
+  }, {
+    title: 'Profile',
+    label: '',
+    icon: '',
+    route: '/',
+    subs: {
+      type: 'normal',
+      datas: [
+        {
+          title: 'Contained',
+          route: '/',
+          icon: '',
+          label: '',
+          subs: [
+            {
+              title: 'Adventure',
+              route: '/',
+              icon: '',
+              label: ''
+            },
+            {
+              title: 'Adventure',
+              route: '/',
+              icon: '',
+              label: ''
+            }
+          ]
+        }, {
+          title: 'Contained',
+          route: '/',
+          icon: '',
+          label: ''
+        }
+      ]
+    }
+  }
+]
 let langs = [{
   title: '中文',
   curr: true

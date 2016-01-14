@@ -8,12 +8,18 @@ import ModuleGroup from "./ModuleGroup.js";
 import Nav from "./Nav.js";
 import NavBar from "./NavBar.js";
 import NavContainer from "./NavContainer.js";
+import WidgetLangs from "./WidgetLangs.js";
 import WidgetSearch from "./WidgetSearch.js";
 
 const Navigation = React.createClass({
   renderSearch() {
     if (this.props.search) {
       return <WidgetSearch />
+    }
+  },
+  renderLangs() {
+    if (this.props.langs) {
+      return <WidgetLangs langs={this.props.langs} />
     }
   },
   render() {
@@ -31,8 +37,7 @@ const Navigation = React.createClass({
               <Module direction="left">
               </Module>
               { this.renderSearch() }
-              <Module direction="left" widget>
-              </Module>
+              { this.renderLangs() }
             </ModuleGroup>
           </NavBar>
         </Nav>

@@ -11,7 +11,7 @@ const WidgetSearch = React.createClass({
         <i className="ti-search" style={{
         width: "20px",
         height: "20px"
-      }}>0</i>
+      }}></i>
         <span className="title">
             搜索
         </span>

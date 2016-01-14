@@ -1,4 +1,5 @@
 import './style/buttons.less'
+import './style/themify-icons.css'
 
 import classNames from 'classnames';
 import elementType from 'react-prop-types/lib/elementType';

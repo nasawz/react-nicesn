@@ -55,6 +55,22 @@ module.exports = {
         test: /\.css$/,
         exclude: [/res/],
         loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer")
+      },
+      {
+        test: /\.woff$/,
+        loader: "url-loader?prefix=font/&limit=5000&mimetype=application/font-woff&name=[path][name].[ext]"
+      },
+      {
+        test: /\.ttf$/,
+        loader: "file-loader?name=[path][name].[ext]"
+      },
+      {
+        test: /\.eot$/,
+        loader: "file-loader?name=[path][name].[ext]"
+      },
+      {
+        test: /\.svg$/,
+        loader: "file-loader?name=[path][name].[ext]"
       }
     ]
   },

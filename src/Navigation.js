@@ -1,4 +1,5 @@
 import './style/navigation.less'
+import './style/themify-icons.css'
 
 import React, { PropTypes } from 'react'
 

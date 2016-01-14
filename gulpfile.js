@@ -57,6 +57,14 @@ gulp.task('webpack', function() {
           {
             test: /\.less$/,
             loader: 'style-loader!css-loader!less-loader'
+          },
+          {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader!autoprefixer'
+          },
+          {
+            test: /\.(woff|svg|eot|ttf)\??.*$/,
+            loader: 'url-loader?limit=50000&name=fonts/[name].[ext]'
           }
         ]
       },

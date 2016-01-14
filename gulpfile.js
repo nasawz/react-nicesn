@@ -5,6 +5,7 @@ var watch = require('gulp-watch')
 var connect = require('gulp-connect')
 
 var gulp = require('gulp')
+var sftp = require('gulp-sftp');
 
 
 gulp.task('default', function() {
@@ -74,3 +75,12 @@ gulp.task('webpack', function() {
     }))
     .pipe(gulp.dest('site/examples/')).pipe(connect.reload());
 })
+
+gulp.task('deploy:react', function() {
+  return gulp.src('site/**')
+    .pipe(sftp({
+      host: '123.57.237.163',
+      auth: 'keyMain',
+      remotePath: '/home/node/react'
+    }));
+});

@@ -1,6 +1,6 @@
 {
   "name": "react-nicesn",
-  "version": "0.0.2",
+  "version": "0.0.3-0",
   "description": "web components built with React",
   "main": "lib/index.js",
   "scripts": {

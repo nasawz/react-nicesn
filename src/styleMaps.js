@@ -1,4 +1,4 @@
-import "babel-polyfill";
+// import "babel-polyfill";
 
 let constant = obj => {
   return Object.assign(

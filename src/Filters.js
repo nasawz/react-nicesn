@@ -1,5 +1,3 @@
-import './style/portoflio.less'
-
 import classNames from "classnames"
 import elementType from 'react-prop-types/lib/elementType'
 import React, { PropTypes } from 'react'

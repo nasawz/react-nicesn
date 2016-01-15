@@ -1,5 +1,3 @@
-import './style/forms.less'
-
 import React, { PropTypes } from 'react'
 
 import Module from "./Module.js";

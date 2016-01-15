@@ -1,5 +1,3 @@
-import './style/loader.less'
-
 import React, { PropTypes } from 'react'
 
 import Col from "./Col.js";
